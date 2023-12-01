@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/btn_bottom_bar.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/btn_filp_mode.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/btn_font.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/btn_theme.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/seek_bar_progress.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/drawable/seek_bar_thumb.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/activity_fragment.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/bottom_bar.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/fragment_reading_layout.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/fragment_shelf_layout.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/item_recycler_view_label.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/item_recycler_view_shelf.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/popup_content.xml" value="0.1118659420289855" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/popup_content_layout.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/layout/popup_font_layout.xml" value="0.203125" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16203703703703703" />
+        <entry key="..\:/Android/ebook/ebook/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16203703703703703" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

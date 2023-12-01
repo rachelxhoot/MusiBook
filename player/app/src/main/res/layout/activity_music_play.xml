@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_blackground"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_topbg"
+        android:layout_above="@+id/llPlayOption"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:subtitleTextAppearance="@style/netease_toolbar_subtitle"
+        app:titleTextAppearance="@style/netease_toolbar_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/toolBar"
+        android:background="#33ffffff" />
+
+    <include
+        android:id="@+id/discview"
+        layout="@layout/layout_discview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlMusicTime"
+        android:layout_below="@id/toolBar" />
+
+    <RelativeLayout
+        android:id="@+id/rlMusicTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llPlayOption"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvCurrentTime"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            tools:text="00:00"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/musicSeekBar"
+            style="@style/neteasa_music_time_seek_bar_sytle"
+            android:layout_centerInParent="true"
+            android:thumb="@drawable/ic_seekbar_thumb"
+            android:layout_toLeftOf="@+id/tvTotalTime"
+            android:layout_toRightOf="@id/tvCurrentTime"/>
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            tools:text="00:00" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llPlayOption"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/ivLast"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_last" />
+
+        <ImageView
+            android:id="@+id/ivPlayOrPause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

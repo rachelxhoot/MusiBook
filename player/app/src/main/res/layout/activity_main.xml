@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009ad6"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RL1"
+        android:background="#DCDCDC">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/search"
+                android:padding="15dp"/>
+
+            <ImageView
+                android:id="@+id/other"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/other" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LLL"
+        android:layout_below="@id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:orientation="horizontal" />
+
+    <ListView
+        android:layout_below="@id/LLL"
+        android:id="@+id/sl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fastScrollEnabled="false"
+        android:layout_marginBottom="70dp"
+        android:background="#ffffff"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/s_list"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FAEBD7">
+
+            <TextView
+                android:id="@+id/s_Title"
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="Music"
+                android:textFontWeight="6"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/s_singerName"
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/s_Title"
+                android:layout_marginLeft="85dp"
+                android:gravity="center_vertical"
+                android:text="Singer"
+                android:textFontWeight="6"
+                android:textSize="15dp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/s_last"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/s_last" />
+
+                <ImageView
+                    android:id="@+id/s_play"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/s_stop" />
+
+                <ImageView
+                    android:id="@+id/s_next"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/s_next"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/s_s_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/music"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@id/s_s_img"
+            android:layout_toRightOf="@id/tv_current_time"
+            android:text="00:00"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_below="@id/s_s_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="00:00/"
+            android:layout_marginStart="15dp" />
+
+        <SeekBar
+            android:id="@+id/sb_main_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxHeight="2dp"
+            android:thumb="@null"
+            android:paddingBottom="4dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
